@@ -27,19 +27,31 @@ nav a {
 
 /* home */
 .homepage {
-    color: #f1f0eaff;
+    /* color: #f1f0eaff; */
     padding: 1em;
     text-align: center;
 }
-
-.homepage .home {
+.homepage .home img{
+    max-width: 1200px;
     overflow: hidden;
+    background: #61594Fff;
+    border-radius: 6px;
+    border: 16px solid #61594Fff; 
+    width: 110%;
+    height: auto;
+    padding: 1em;
+    position: center;
+    filter: blur(px);
+}
+
+.homepage .hometext {
+    /* overflow: hidden;
     background: url("img/homebg.jpg")no-repeat center center fixed;
     border-radius: 20px;
-    border: 16px solid url("img/homebg.jpg")no-repeat center center fixed;;
+    border: 16px solid url("img/homebg.jpg")no-repeat center center fixed;; */
     /* box-shadow: 3px 3px 5px #313B40ff; */
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; 
@@ -52,16 +64,18 @@ nav a {
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+    margin-bottom: 0px;
 }
 
 .homepage p {
-    color: #313B40ff;
+    color: #E7E3DDff;
     font-size: 20px;
     text-align: center;
-    margin-top: -50px; /* Adjust the margin to move it closer to the h1 */
-    /* text-shadow: 2px 2px 5px  #E7E3DDff;  */
+    margin-top: 10px; 
+    text-shadow: 2px 2px 5px  #BDB0A1ff; 
 
 }
+
 
 .homepage .bouncing-text {
     position: relative; 
