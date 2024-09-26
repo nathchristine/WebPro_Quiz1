@@ -1,0 +1,292 @@
+body {
+    /* background: url("img/homebg.jpg")no-repeat center center fixed;
+    background-size: cover; */
+    background-color: #BDB0A1ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #313B40ff;
+    /* background: url("img/webg.jpg"); */
+    color: #E7E3DDff;
+    padding: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+.content {
+    padding: 2em;
+}
+
+/* home */
+.homepage {
+    color: #f1f0eaff;
+    padding: 1em;
+    text-align: center;
+}
+
+.homepage .home {
+    overflow: hidden;
+    background: url("img/homebg.jpg")no-repeat center center fixed;
+    border-radius: 20px;
+    border: 16px solid url("img/homebg.jpg")no-repeat center center fixed;;
+    /* box-shadow: 3px 3px 5px #313B40ff; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    height: 22%;
+}
+
+.homepage h1 {
+    font-size: 2.5em;
+    color: #E7E3DDff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+}
+
+.homepage p {
+    color: #313B40ff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -50px; /* Adjust the margin to move it closer to the h1 */
+    /* text-shadow: 2px 2px 5px  #E7E3DDff;  */
+
+}
+
+.homepage .bouncing-text {
+    position: relative; 
+    display: inline-block; 
+    animation: bounce 1s infinite alternate;
+    font-size: 18px; 
+    /* margin-top: 20px;  */
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0); 
+    }
+    100% {
+      transform: translateY(20px);
+    }
+}
+
+/* profile */
+.profilepage h1 {
+    color: #181515ff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
+    /* padding: 1em; */
+}
+.profile {
+    color: #E7E3DDff;
+    max-width: 1200px;
+    margin: 60px auto;
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    gap: 30px;
+  }
+  .profile div {
+    overflow: hidden;
+    background: #61594Fff;
+    border-radius: 6px;
+    border: 16px solid #61594Fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+  }
+  .profile img {
+    min-width: 100%;
+    height: 100%;
+  }
+  .profile .short {
+    grid-row: span 1;
+  }
+  .profile .tall {
+    grid-row: span 2;
+  }
+  .profile h3 {
+    text-transform: uppercase;
+    text-align: center;
+  } 
+  .profile p {
+    margin: 10px;
+    text-align: justify;
+  }
+  .profile a:link, .profilepage a:visited {
+    color: #E7E3DDff;
+    /* text-decoration: none; */
+  }
+
+/* hometowm */
+.hometown {
+    /* color: #f1f0eaff; */
+    padding: 1em;
+    text-align: center;
+}
+.hometown .jkt-pic {
+    position: relative;
+}
+.hometown .jkt-pic img {
+    max-width: 1200px;
+    overflow: hidden;
+    background: #61594Fff;
+    border-radius: 6px;
+    border: 16px solid #61594Fff;
+    width: 95%;
+    height: auto;
+    padding: 1em;
+    position: center;
+}
+.hometown .jkt-pic .jkt-text h3 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+}
+.hometown .jkt-pic .jkt-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #E7E3DDff;
+}
+.hometown h1 {
+    color: #181515ff;
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    
+}
+.hometown h2{
+    color: #181515ff;
+    font-size: 1.5em;
+    margin-top: 30px;
+    font-weight: bold; 
+}
+.hometown .morejkt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+}
+.hometown .jtowm {
+    position: relative;
+}
+.hometown .morejkt img {
+    width: 100%;
+    overflow: hidden;
+    background: #61594Fff;
+    border-radius: 6px;
+    border: 16px solid #61594Fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+}
+.hometown .morejkt h3 {
+    position: absolute;
+    text-align: center;
+    color: #E7E3DDff;
+    left: 55%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+    width: 100%;
+}
+
+/* local food */
+.foodpage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 20px auto;
+    color: #E7E3DDff;
+    
+}
+.food{
+    overflow: hidden;
+    background: #61594Fff;
+    border-radius: 6px;
+    border: 16px solid #61594Fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+}
+.foodpage h1 {
+    color: #181515ff;
+    grid-column: span 3;
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.foodpage h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.foodpage p {
+    text-align: justify;
+}
+.food img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* tourist place */
+.touristpage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+.touristpage h1{
+    grid-column: span 3;
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181515ff;
+}
+.place {
+    overflow: hidden;
+    background: #61594Fff;
+    border-radius: 6px;
+    border: 25px solid #61594Fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+  }
+  article.place {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #61594Fff;
+    padding-bottom: 16px;
+    color: #E7E3DDff;
+  }
+  article.place h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+    article.place p {
+        text-align: center;
+    }
+  article img {
+    width: 100%;
+    /* border: 4px solid #fff; */
+    border-radius: 8px;
+  }
+  
