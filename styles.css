@@ -1,6 +1,4 @@
 body {
-    /* background: url("img/homebg.jpg")no-repeat center center fixed;
-    background-size: cover; */
     background-color: #BDB0A1ff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -10,7 +8,6 @@ body {
 /* Navigation bar */
 nav {
     background-color: #313B40ff;
-    /* background: url("img/webg.jpg"); */
     color: #E7E3DDff;
     padding: 1.5em;
     text-align: center;
@@ -27,7 +24,6 @@ nav a {
 
 /* home */
 .homepage {
-    /* color: #f1f0eaff; */
     padding: 1em;
     text-align: center;
 }
@@ -43,13 +39,7 @@ nav a {
     position: center;
     filter: blur(px);
 }
-
 .homepage .hometext {
-    /* overflow: hidden;
-    background: url("img/homebg.jpg")no-repeat center center fixed;
-    border-radius: 20px;
-    border: 16px solid url("img/homebg.jpg")no-repeat center center fixed;; */
-    /* box-shadow: 3px 3px 5px #313B40ff; */
     position: absolute;
     top: 57%;
     left: 50%;
@@ -57,7 +47,6 @@ nav a {
     width: 80%; 
     height: 22%;
 }
-
 .homepage h1 {
     font-size: 2.5em;
     color: #E7E3DDff;
@@ -66,7 +55,6 @@ nav a {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
     margin-bottom: 0px;
 }
-
 .homepage p {
     color: #E7E3DDff;
     font-size: 20px;
@@ -75,17 +63,13 @@ nav a {
     text-shadow: 2px 2px 5px  #BDB0A1ff; 
 
 }
-
-
 .homepage .bouncing-text {
     position: relative; 
     display: inline-block; 
     animation: bounce 1s infinite alternate;
     font-size: 18px; 
-    /* margin-top: 20px;  */
-  }
-
-  @keyframes bounce {
+}
+@keyframes bounce {
     0% {
       transform: translateY(0); 
     }
@@ -94,19 +78,19 @@ nav a {
     }
 }
 
+
+
 /* profile */
 .profilepage h1 {
     color: #181515ff;
     font-weight: bold;
     text-align: center;
     font-size: 2.5em;
-    /* padding: 1em; */
 }
 .profile {
     color: #E7E3DDff;
     max-width: 1200px;
     margin: 60px auto;
-    /* padding: 20px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 250px;
@@ -139,12 +123,10 @@ nav a {
   }
   .profile a:link, .profilepage a:visited {
     color: #E7E3DDff;
-    /* text-decoration: none; */
   }
 
 /* hometowm */
 .hometown {
-    /* color: #f1f0eaff; */
     padding: 1em;
     text-align: center;
 }
@@ -300,7 +282,6 @@ nav a {
     }
   article img {
     width: 100%;
-    /* border: 4px solid #fff; */
     border-radius: 8px;
   }
   
